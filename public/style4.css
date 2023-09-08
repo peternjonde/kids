@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+h1{
+    color:rgb(22, 199, 22);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2{
+    color:rgb(9, 244, 9);
+    font-weight: 600;
+    opacity: 0.8;
+}
+p{
+    color:rgb(22, 199, 22);
+    font-weight: 100;
+   
+}
+.title{
+    color:white;
+    position: absolute;
+    font-weight: 500;
+    top:9%;
+    opacity: 0.8;
+}
+
+main{
+    font-family: 'Poppins', sans-serif; 
+    min-height: 100vh;
+    background: linear-gradient(to right top,rgb(138, 220, 138),limegreen );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    
+    right:300px;
+    bottom:20px;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    position: absolute;
+    background: white;
+    min-height: 95vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255,0.7),rgba(255, 255, 255,0.3));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter:  blur(2rem);
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+}
+.circle1{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.4));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px rgba(122,122,122,0.2);
+}
+.circle2{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.4));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    bottom: 5%;
+    left:10%;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px rgba(122,122,122,0.2);
+}
+.img-python{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.img-java{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.img-c{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.info{
+    position: absolute;
+    top:17%;
+}
+.java{
+    position: absolute;
+    top:112%;
+    background: linear-gradient(to left top,rgba(255,255,255,1), rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 30px rgba(122,122,122,0.6);
+}
+.c{
+    position: absolute;
+    top:252%;
+    background: linear-gradient(to left top,rgba(255,255,255,1), rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 30px rgba(122,122,122,0.6);
+    
+}
+.info{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.python{
+    
+    background: linear-gradient(to left top,rgba(255,255,255,1), rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 30px rgba(122,122,122,0.6);
+}
+.arrow{
+    position: relative;
+    right: 600px;
+    top:10%;
+    width: 200px;
+    height: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 4;
+  
+}
+.arrow:hover{
+    cursor: pointer;
+}
+
+
+    

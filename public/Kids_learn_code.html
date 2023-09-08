@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kids Learn Code</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-image: url("Background3.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      
+      /* col is the About us Hyperlink*/
+      a.col {
+        float: right;
+        width: 95px;
+        padding: 35px 0;
+        padding-bottom: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+      }
+      /* Mol is the About us Hyperlink*/
+      a.mol {
+        float: right;
+        width: 95px;
+        padding: 35px 0;
+        padding-bottom: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      a.mol::after {
+        content: "";
+        height: 2px;
+        width: 0px;
+        background: limegreen;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 0.4s;
+      }
+      a.col::after {
+        content: "";
+        height: 2px;
+        width: 0px;
+        background: limegreen;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 0.4s;
+      }
+      a.mol:hover::after {
+        width: 65px;
+      }
+      a.col:hover::after {
+        width: 80px;
+      }
+      
+      .intro{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+      }
+      .intro h1{
+        font-size: 50px;
+        font-weight: 100;
+      }
+      .intro p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+      }
+      button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px, 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid limegreen;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    
+      }
+      
+      span{
+        background: limegreen;
+        height: 100%;
+        width:0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.4s;
+      }
+      button:hover span {
+        background: limegreen;
+        width:100%;
+        
+      }
+      
+      h1.logo{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        font-size: 40px;
+        color: limegreen;
+        
+      }
+      h1.logo:hover{
+        cursor: pointer;
+      }
+      img.arrow{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 57%;
+        left: 15%;
+        transition: 0.4s;
+      }
+      img.arrow:hover{
+        cursor: pointer;
+        left: 19%;
+      }
+      .container{
+        padding-right: 20px;
+        position: absolute;
+        top: 57%;
+        left: 69%;
+        transition: 0.4s;
+      }
+      .container:hover{
+        cursor: pointer;
+        left: 60%;
+      }
+
+      img.curved{
+        
+        width: 200px;
+        height: 100px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        
+      }
+      
+      img.sun{
+        position: absolute;
+        width: 330px;
+        height: 330px;
+        top: 60%;
+        left: 38.5%;
+       
+
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+    <img class = "sun" src="drawing5.png" alt="">
+
+    <img class = "arrow" src="drawing3.png" alt="drawing">
+    <div class="container">
+      <img class = "curved" src="drawing4.png" alt="">
+    </div>
+    <h1 class="logo">KLC</h1>
+    <link rel="stylesheet" href="style2.css">
+    <a class="col" href="About_Us.html">About Us</a>
+    <a class="mol" href="course.html">Course</a>
+    <div class="intro">
+        <h1>KIDZ LEARN CODE</h1>
+        <p>
+            Teaching kids in the GTA the basics of programming as well as coding <br> in a fun and innovative way
+        </p>
+
+        <div>
+          <a href="index.html">
+            <button type="button"><span></span>BOOK NOW</button>
+          </a>
+  
+        </div>
+    </div>
+
+  
+  </body>
+</html>
